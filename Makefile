@@ -10,7 +10,8 @@ SINGLE_PROGRAMS := \
 	04-functions/functions \
 	04-functions/args \
 	05-arrays-pointers/arrays \
-	05-arrays-pointers/pointers
+	05-arrays-pointers/pointers \
+	06-strings/strings
 
 MULTI_PROGRAMS :=
 
