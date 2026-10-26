@@ -11,7 +11,8 @@ SINGLE_PROGRAMS := \
 	04-functions/args \
 	05-arrays-pointers/arrays \
 	05-arrays-pointers/pointers \
-	06-strings/strings
+	06-strings/strings \
+	07-aggregates/aggregates
 
 MULTI_PROGRAMS :=
 
