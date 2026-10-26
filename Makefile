@@ -14,7 +14,8 @@ SINGLE_PROGRAMS := \
 	06-strings/strings \
 	07-aggregates/aggregates
 
-MULTI_PROGRAMS :=
+MULTI_PROGRAMS := \
+	08-storage/storage
 
 PROGRAMS := $(SINGLE_PROGRAMS) $(MULTI_PROGRAMS)
 
@@ -25,9 +26,9 @@ all: $(PROGRAMS)
 $(SINGLE_PROGRAMS): %: %.c
 	$(CC) $(CFLAGS) $< -o $@ $(LDFLAGS)
 
-# 多文件程序在这里显式链接，例如：
-# 08-storage/storage: 08-storage/storage.c 08-storage/counter.c
-# 	$(CC) $(CFLAGS) $^ -o $@ $(LDFLAGS)
+# 多文件程序在这里显式链接。
+08-storage/storage: 08-storage/storage.c 08-storage/counter.c 08-storage/counter.h
+	$(CC) $(CFLAGS) 08-storage/storage.c 08-storage/counter.c -o $@ $(LDFLAGS)
 
 run: all
 	@set -e; for program in $(PROGRAMS); do \

@@ -9,6 +9,7 @@
 05-arrays-pointers/pointers
 06-strings/strings
 07-aggregates/aggregates
+08-storage/storage
 build/
 *.o
 *.out
