@@ -12,7 +12,8 @@ SINGLE_PROGRAMS := \
 	05-arrays-pointers/arrays \
 	05-arrays-pointers/pointers \
 	06-strings/strings \
-	07-aggregates/aggregates
+	07-aggregates/aggregates \
+	09-preprocessor/preprocessor
 
 MULTI_PROGRAMS := \
 	08-storage/storage
@@ -25,6 +26,9 @@ all: $(PROGRAMS)
 
 $(SINGLE_PROGRAMS): %: %.c
 	$(CC) $(CFLAGS) $< -o $@ $(LDFLAGS)
+
+# 头文件依赖。
+09-preprocessor/preprocessor: 09-preprocessor/config.h
 
 # 多文件程序在这里显式链接。
 08-storage/storage: 08-storage/storage.c 08-storage/counter.c 08-storage/counter.h
