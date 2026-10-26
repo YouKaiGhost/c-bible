@@ -8,7 +8,9 @@ SINGLE_PROGRAMS := \
 	02-expressions/expressions \
 	03-control-flow/control \
 	04-functions/functions \
-	04-functions/args
+	04-functions/args \
+	05-arrays-pointers/arrays \
+	05-arrays-pointers/pointers
 
 MULTI_PROGRAMS :=
 
