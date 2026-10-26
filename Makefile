@@ -13,7 +13,8 @@ SINGLE_PROGRAMS := \
 	05-arrays-pointers/pointers \
 	06-strings/strings \
 	07-aggregates/aggregates \
-	09-preprocessor/preprocessor
+	09-preprocessor/preprocessor \
+	10-undefined/portable
 
 MULTI_PROGRAMS := \
 	08-storage/storage

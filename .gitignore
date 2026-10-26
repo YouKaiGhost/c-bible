@@ -11,6 +11,7 @@
 07-aggregates/aggregates
 08-storage/storage
 09-preprocessor/preprocessor
+10-undefined/portable
 build/
 *.o
 *.out
