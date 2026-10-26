@@ -4,7 +4,8 @@ LDFLAGS ?=
 
 SINGLE_PROGRAMS := \
 	00-hello-world/hello \
-	01-types/types
+	01-types/types \
+	02-expressions/expressions
 
 MULTI_PROGRAMS :=
 
