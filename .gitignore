@@ -2,6 +2,7 @@
 00-hello-world/hello
 01-types/types
 02-expressions/expressions
+03-control-flow/control
 build/
 *.o
 *.out

@@ -5,7 +5,8 @@ LDFLAGS ?=
 SINGLE_PROGRAMS := \
 	00-hello-world/hello \
 	01-types/types \
-	02-expressions/expressions
+	02-expressions/expressions \
+	03-control-flow/control
 
 MULTI_PROGRAMS :=
 
