@@ -363,7 +363,7 @@ _Static_assert(sizeof(int) >= 2, "int must hold at least 16 bits");
 _Static_assert(sizeof(char) == 1, "sizeof(char) is always 1");
 ```
 
-它适合检查平台假设，而不是运行时条件。C23 把它改名成 `static_assert`，并允许不加消息。
+它适合检查平台假设，而不是运行时条件。C23 增加了 `static_assert` 拼写，并允许不加消息；旧的 `_Static_assert` 仍然保留。
 
 ## 1.9 代码导览
 
