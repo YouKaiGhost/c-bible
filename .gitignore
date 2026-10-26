@@ -1,5 +1,6 @@
 # 编译产物
 00-hello-world/hello
+01-types/types
 build/
 *.o
 *.out
