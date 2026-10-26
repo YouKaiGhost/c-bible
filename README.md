@@ -103,6 +103,7 @@ c-bible/
 ├── README.md
 ├── Makefile
 ├── .gitignore
+├── LICENSE
 ├── 00-hello-world/
 ├── 01-types/
 ├── 02-expressions/
@@ -151,3 +152,7 @@ make check
 附录补充了 `_Alignas`、VLA、变参函数、复数、原子/线程存储等 C11/C17 特性，并给出 C23 的速览。
 
 它不展开标准库 API 大全、POSIX、操作系统接口、GUI、构建系统和 C23 的全部细节。教材的目标是让你读懂语言本身，而不是背完所有库函数。
+
+## 许可
+
+本仓库采用 [MIT License](LICENSE)。课文与代码均可按 MIT 条款使用、修改和分发。
