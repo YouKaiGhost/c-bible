@@ -14,12 +14,14 @@ SINGLE_PROGRAMS := \
 	06-strings/strings \
 	07-aggregates/aggregates \
 	09-preprocessor/preprocessor \
-	10-undefined/portable
+	10-undefined/portable \
+	11-capstone/calc
 
 MULTI_PROGRAMS := \
 	08-storage/storage
 
 PROGRAMS := $(SINGLE_PROGRAMS) $(MULTI_PROGRAMS)
+RUN_PROGRAMS := $(sort $(PROGRAMS))
 
 .PHONY: all run check clean
 
@@ -36,7 +38,7 @@ $(SINGLE_PROGRAMS): %: %.c
 	$(CC) $(CFLAGS) 08-storage/storage.c 08-storage/counter.c -o $@ $(LDFLAGS)
 
 run: all
-	@set -e; for program in $(PROGRAMS); do \
+	@set -e; for program in $(RUN_PROGRAMS); do \
 		printf '\n===== %s =====\n' "$$program"; \
 		./"$$program"; \
 	done

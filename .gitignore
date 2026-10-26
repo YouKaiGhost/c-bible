@@ -12,6 +12,7 @@
 08-storage/storage
 09-preprocessor/preprocessor
 10-undefined/portable
+11-capstone/calc
 build/
 *.o
 *.out
