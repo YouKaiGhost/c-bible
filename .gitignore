@@ -1,0 +1,7 @@
+# 编译产物
+00-hello-world/hello
+build/
+*.o
+*.out
+a.out
+*.exe
